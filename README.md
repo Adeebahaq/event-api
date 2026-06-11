@@ -15,7 +15,7 @@ A simple Event Registration System API built with Node.js
 git clone https://github.com/Adeebahaq/event-api
 cd event-api
 npm install
-npm start
+node  index.js
  ```
 Server runs at `http://localhost:3000`
  
