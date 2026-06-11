@@ -30,19 +30,17 @@ npm install
 npm start
 
 ## API Endpoints
-
-### Create Event
+Create Event
 POST /events
-
-### Register User
+Register User
 POST /register
-
-### View Events
+View Events
 GET /events
-
-### Cancel Registration
+Cancel Registration
 DELETE /cancel
+Notes
+Handles race conditions and duplicate requests
+Ensures accurate seat count
 
-## Notes
-- Handles race conditions and duplicate requests
-- Ensures accurate seat count
+
+
