@@ -1,7 +1,6 @@
 # Event Registration System API
 
-A simple Event Registration System API built with Node.js and Express.js.
-
+A simple Event Registration System API built with Node.js 
 ## Features
 - Create events with seat limits and future dates
 - Register users for events
@@ -25,12 +24,12 @@ Server runs at `http://localhost:3000`
  
 | Method | URL | Description |
 |---|---|---|
-| GET | `/events` | List all events |
-| POST | `/events` | Create an event |
-| GET | `/events/:id` | Get one event |
-| POST | `/registrations` | Register a user |
-| DELETE | `/registrations/:id` | Cancel registration |
-| GET | `/registrations` | List registrations |
+| GET | /events | List all events |
+| POST | /events | Create an event |
+| GET | /events/:id | Get one event |
+| POST | /registrations | Register a user |
+| DELETE | /registrations/:id | Cancel registration |
+| GET | /registrations | List registrations |
  
 ---
  
