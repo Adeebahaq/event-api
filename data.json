@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "id": "68c85885-a2a3-463e-9321-f559af82f397",
+      "name": "My Event",
+      "totalSeats": 10,
+      "availableSeats": 10,
+      "date": "2027-09-01T10:00:00.000Z",
+      "createdAt": "2026-06-11T06:27:43.277Z"
+    }
+  ],
+  "registrations": []
+}
