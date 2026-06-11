@@ -28,6 +28,7 @@ git clone https://github.com/Adeebahaq/event-api
 cd event-api
 npm install
 npm start
+```
 
 ## API Endpoints
 Create Event
