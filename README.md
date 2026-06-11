@@ -16,7 +16,7 @@ git clone https://github.com/Adeebahaq/event-api
 cd event-api
 npm install
 npm start
- 
+ ```
 Server runs at `http://localhost:3000`
  
 ---
