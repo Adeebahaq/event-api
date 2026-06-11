@@ -31,15 +31,17 @@ npm start
 ```
 
 ## API Endpoints
-Create Event
-POST /events
-Register User
-POST /register
-View Events
-GET /events
-Cancel Registration
-DELETE /cancel
-Notes
+##Create Event
+- POST /events
+##Register User
+- POST /register
+##View Events
+- GET /events
+##Cancel Registration
+-DELETE /cancel
+
+
+## Notes
 Handles race conditions and duplicate requests
 Ensures accurate seat count
 
