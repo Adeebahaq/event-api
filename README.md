@@ -10,40 +10,55 @@ A simple Event Registration System API built with Node.js and Express.js.
 - Cancel registrations
 - View events with available seats and sorting
 
-## Rules
-- Event name must be unique
-- Total seats must be greater than 0
-- Event date must be in the future
-- Users cannot register twice for the same event
-- Cannot register if event is full
-
-## Tech Stack
-- Node.js
-- JSON file storage
-
 ## Setup
-
+ 
 ```bash
-git clone https://github.com/Adeebahaq/event-api
-cd event-api
 npm install
-npm start
+node index.js
 ```
-
-## API Endpoints
-##Create Event
-- POST /events
-##Register User
-- POST /register
-##View Events
-- GET /events
-##Cancel Registration
--DELETE /cancel
-
-
-## Notes
-Handles race conditions and duplicate requests
-Ensures accurate seat count
-
-
-
+ 
+Server runs at `http://localhost:3000`
+ 
+---
+ 
+## Endpoints
+ 
+| Method | URL | Description |
+|---|---|---|
+| GET | `/events` | List all events |
+| POST | `/events` | Create an event |
+| GET | `/events/:id` | Get one event |
+| POST | `/registrations` | Register a user |
+| DELETE | `/registrations/:id` | Cancel registration |
+| GET | `/registrations` | List registrations |
+ 
+---
+ 
+##  Examples
+ 
+**Create event**
+```bash
+POST /events
+{ "name": "My Event", "totalSeats": 10, "date": "2027-09-01T10:00:00Z" }
+```
+ 
+**Register user**
+```bash
+POST /registrations
+{ "userName": "Alice", "eventId": "your-event-id" }
+```
+ 
+**Cancel**
+```bash
+DELETE /registrations/your-registration-id
+```
+ 
+---
+ 
+## Rules
+ 
+- Event name must be unique
+- Event date must be in the future
+- Seats must be greater than 0
+- Same user can't register twice for the same event
+- Cancelling a registration restores the seat
