@@ -10,11 +10,12 @@ A simple Event Registration System API built with Node.js
 - View events with available seats and sorting
 
 ## Setup
- 
+
 ```bash
+git clone https://github.com/Adeebahaq/event-api
+cd event-api
 npm install
-node index.js
-```
+npm start
  
 Server runs at `http://localhost:3000`
  
